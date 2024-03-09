@@ -14,17 +14,17 @@ class CartModel {
 List<CartModel> cartList = [
   CartModel(
       name: 'Minimal Stand',
-      image: 'item1.png',
+      image: 'assets/item1.png',
       price: 'EGP 1250.00',
       qty: '01'),
   CartModel(
       name: 'Coffee Table',
-      image: 'item2.png',
+      image: 'assets/item2.png',
       price: 'EGP 1000.00',
       qty: '01'),
   CartModel(
       name: 'Minimal Desk',
-      image: 'item3.png',
+      image: 'assets/item3.png',
       price: 'EGP 2500.00',
       qty: '01'),
 ];

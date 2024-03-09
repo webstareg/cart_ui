@@ -16,8 +16,8 @@ class CartView extends StatelessWidget {
         title: Text(
           'My cart',
           style: TextStyle(color: AppColors.black),
-          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       // floatingActionButton: FloatingActionButton(
       //   backgroundColor: AppColors.primary,
