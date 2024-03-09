@@ -1,0 +1,35 @@
+name: cart_ui
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+  # fonts:
+  #   family: Merriweather
+  #     - fonts:
+  #       - asset: assets/fonts/Merriweather Light.ttf
+  #       - asset: assets/fonts/Merriweather-Bold.ttf
+  # - family: Nunito
+  #   fonts:
+  #     - asset: fonts/Nunito Sans.ttf
+  # - family: RobotoMono
+  #   fonts:
+  #     - asset: fonts/RobotoMono-Regular.ttf
+  #     - asset: fonts/RobotoMono-Bold.ttf
+  #       weight: 700
