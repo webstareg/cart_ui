@@ -9,6 +9,7 @@ class CartList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.separated(
+        itemCount: cartList.length,
         separatorBuilder: (context, index) {
           return Divider(
             color: AppColors.secondaryButtonBG,
@@ -16,14 +17,11 @@ class CartList extends StatelessWidget {
             endIndent: 15,
           );
         },
-        itemCount: cartList.length,
         itemBuilder: (context, index) {
           return ListTile(
             title: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                //Text('Test'),
-
                 ClipRRect(
                     borderRadius: BorderRadius.circular(3),
                     child: Image.asset(
@@ -33,26 +31,22 @@ class CartList extends StatelessWidget {
                       fit: BoxFit.cover,
                     )),
 
-                //     // Container(
-                //     //   width: 100,
-                //     //   height: 100,
-                //     //   decoration: BoxDecoration(
-                //     //     shape: BoxShape.rectangle,
-                //     //     image: DecorationImage(
-                //     //       image: AssetImage(cartList[index].image),
-                //     //       fit: BoxFit.cover,
-                //     //     ),
-                //     //   ),
-                //     // ),
-
-                //     // CircleAvatar(
-                //     //   radius: 50,
-                //     //   //backgroundColor: Colors.white38,
-                //     //   child: CircleAvatar(
-                //     //     radius: 100,
-                //     //     backgroundImage: AssetImage(cartList[index].image),
-                //     //   ),
-                //     // ),
+                // Container(
+                //   width: 100,
+                //   height: 100,
+                //   decoration: BoxDecoration(
+                //     shape: BoxShape.rectangle,
+                //     image: DecorationImage(
+                //       image: AssetImage(cartList[index].image),
+                //       fit: BoxFit.cover,
+                //     ),
+                //   ),
+                // ),
+                // CircleAvatar(
+                //   radius: 50,
+                //   //backgroundColor: Colors.white38,
+                //   backgroundImage: AssetImage(cartList[index].image),
+                // ),
 
                 const SizedBox(
                   width: 20,
@@ -60,20 +54,26 @@ class CartList extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      cartList[index].name,
-                      style: TextStyle(
-                        color: AppColors.disabledButton,
-                        //fontWeight: FontWeight.w600,
-                        fontSize: 14,
+                    SizedBox(
+                      height: 30,
+                      child: Text(
+                        cartList[index].name,
+                        style: TextStyle(
+                          color: AppColors.disabledButton,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
                       ),
                     ),
-                    Text(
-                      cartList[index].price,
-                      style: TextStyle(
-                        color: AppColors.primary,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 16,
+                    SizedBox(
+                      height: 30,
+                      child: Text(
+                        cartList[index].price,
+                        style: TextStyle(
+                          color: AppColors.primary,
+                          fontWeight: FontWeight.w700,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                     Row(
@@ -116,6 +116,13 @@ class CartList extends StatelessWidget {
                       ],
                     ),
                   ],
+                ),
+                // const SizedBox(
+                //   width: 2,
+                // ),
+                const CircleAvatar(
+                  radius: 20,
+                  backgroundImage: AssetImage("close.svg"),
                 ),
               ],
             ),
