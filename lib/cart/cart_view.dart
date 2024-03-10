@@ -19,12 +19,6 @@ class CartView extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   backgroundColor: AppColors.primary,
-      //   foregroundColor: AppColors.white,
-      //   child: const Icon(Icons.add),
-      //   onPressed: () {},
-      // ),
       body: const Column(
         children: [
           // Cart List

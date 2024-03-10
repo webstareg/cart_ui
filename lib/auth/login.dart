@@ -46,7 +46,7 @@ class _LoginState extends State<Login> {
                   Text(
                     'WELCOME BACK',
                     style: TextStyle(
-                        fontFamily: 'Merriweather Light',
+                        fontFamily: 'Merriweather',
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
                         color: AppColors.black),
