@@ -117,12 +117,13 @@ class CartList extends StatelessWidget {
                     ),
                   ],
                 ),
-                // const SizedBox(
-                //   width: 2,
-                // ),
-                const CircleAvatar(
-                  radius: 20,
-                  backgroundImage: AssetImage("close.svg"),
+                const SizedBox(
+                  width: 120,
+                ),
+                CircleAvatar(
+                  radius: 12,
+                  backgroundImage: const AssetImage("assets/close.png"),
+                  backgroundColor: AppColors.white,
                 ),
               ],
             ),
